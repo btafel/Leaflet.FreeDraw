@@ -19,7 +19,7 @@ export const updateFor = (map, eventType) => {
     });
 
     // Fire the current set of lat lngs.
-    map[instanceKey].fire('markers', { latLngs, eventType });
+    map[instanceKey] && map[instanceKey].fire('markers', { latLngs, eventType });
 
 };
 
